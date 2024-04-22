@@ -8,7 +8,7 @@ function Gallery() {
   const [term, setTerm] = useState("flower");
   useEffect(() => {
     fetch(
-      `https://pixabay.com/api/?key=${process.env.REACT_APP_PIXABAY_API_KEY}&q=${term}&image_type=photo&pretty=true`
+      `https://pixabay.com/api/?key=${"36045911-3baad37b4474713c9af5c486d"}&q=${term}&image_type=photo&pretty=true`
     )
       .then((res) => res.json())
       .then((data) => {
