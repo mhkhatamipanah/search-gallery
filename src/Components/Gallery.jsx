@@ -3,6 +3,7 @@ import ImageCards from "./ImageCards";
 import ImageSearch from "./ImageSearch";
 import notFoundImage from '../Assets/image/1.jpg'
 function Gallery() {
+ console.log(process.env.REACT_APP_PIXABAY_API_KEY)
   const [image, setImage] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [term, setTerm] = useState("flower");
